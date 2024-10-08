@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=, initial-scale=1.0">
-  <title>Document</title>
+  <title>Turtle</title>
 </head>
 <body>
   <canvas style="border: 1px solid black" id="mycanvas" height ="800" width = "1200">
@@ -28,11 +28,25 @@
   }
 
   //This code is getting executed.
-  for(let i = 0; i < 6; i++){
-    p.forward(50);
-    p.left(45);
+  function Circle(){
+  for(let i = 0; i < 90; i++){
+    p.forward(10);
+    p.left(4);
   }
-	
+}
+
+  //This codes makes a flower
+  function Flower(){
+    for(let i = 0; i < 6; i++){
+      p.left(120);
+      for(let i = 0; i < 45; i++){
+        p.forward(5);
+        p.left(4);
+      }
+  }
+}
+
+  Flower();
 
 </script>
 </html>
